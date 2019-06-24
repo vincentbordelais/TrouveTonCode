@@ -1,0 +1,113 @@
+{% extends "layout.html.twig" %}
+
+{% block title %}Hello ArticleController!{% endblock %}
+
+{% block body %}
+
+        <!--colleft-->
+        <div class="col-md-8 col-sm-12">
+
+            <!--post-detail-->
+            <article class="post-detail">
+                <h1>Page affichage de l'article</h1>
+
+                <div class="meta-post">
+                    <a href="#">
+                        Nom bidon du user qui a écrit l'article
+                    </a>
+                    <em></em>
+                    <span>
+                        Date bidon de création de l'article
+                </span>
+                </div>
+
+                Description bidon de l'article
+
+                <h5 class="text-right font-heading">
+                    <strong>
+                        Nom bidon du user qui a écrit l'article
+                    </strong>
+                </h5>
+            </article>
+
+        {% include 'components/_sidebar.html.twig' %}
+
+   <!-- <form>
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Snippet :</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">Choix du language :</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+                <option>HTML</option>
+                <option>CSS</option>
+                <option>JS</option>
+                <option>PHP</option>
+                <option>SQL</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Description :</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputCity">Tag 1 :</label>
+                <input type="text" class="form-control" id="inputCity">
+            </div>
+
+            <div class="form-group col-md-6">
+                <label for="inputCity">Tag 2 :</label>
+                <input type="text" class="form-control" id="inputCity">
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Envoyez</button>
+    </form> -->
+
+
+
+
+            <!--social-detail-->
+            <div class="social-detail">
+                <span>   Partagez cet article</span>
+
+                <ul class="list-social-icon">
+                    <li>
+                        <a href="#" class="facebook">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="twitter">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="google">
+                            <i class="fa fa-google"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="youtube">
+                            <i class="fa fa-youtube-play"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="pinterest">
+                            <i class="fa fa-pinterest-p"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="rss">
+                            <i class="fa fa-rss"></i>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+{% endblock %}

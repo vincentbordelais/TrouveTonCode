@@ -1,0 +1,33 @@
+{% extends "layout.html.twig" %}
+
+{% set current = 'inscription' %}
+
+{% block page_title %}
+    Inscription
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+{% endblock %}
+
+{% block javascripts %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pwstrength-bootstrap/3.0.4/pwstrength-bootstrap.min.js" integrity="sha256-d2Fguy9Os3DfZDl0HZWt/uCx4M1QpztOnhwEKeMURUI=" crossorigin="anonymous"></script>
+    <script>
+        $('#form_password').pwstrength({
+            ui:{
+                bootstrap3: true
+            }
+        });
+    </script>
+{% endblock %}
+
+{% form_theme form 'bootstrap_4_layout.html.twig' %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-xs-8 col-xs-push-2">
+            <h3>Page Inscription</h3>
+            {{ form(form, {attr:{novalidate: 'novalidate' }}) }}
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}TrouveTonCode!{% endblock %}</title>
+
+        {% block stylesheets %}
+        {% endblock %}
+    </head>
+
+    <body>
+    {% block body '' %}
+
+    {% block javascripts %}
+
+    <script>
+
+        // ------  TEST ------- //
+
+        $(document).ready(function() {
+            var id = $keywords;
+            $.ajax({
+                method: "POST",
+                url: "{{ path('home') }}",
+                data: {id: id},
+                success: function(){
+                    alert("envoyé");
+                    console.log($keywords);
+                    dump($keywords);
+                }
+            });
+        });
+    </script>
+        {% endblock %}
+
+    </body>
+</html>
+
+

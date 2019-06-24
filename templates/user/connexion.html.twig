@@ -1,0 +1,18 @@
+{% extends 'layout.html.twig' %}
+
+{% set current = 'connexion' %}
+
+{% block page_title %}
+    Connexion
+{% endblock %}
+
+{% form_theme form 'bootstrap_4_layout.html.twig' %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-xs-8 col-xs-push-2">
+            <h3>Page Connexion</h3>
+            {{ form(form, {attr:{novalidate: 'novalidate' }}) }}
+        </div>
+    </div>
+{% endblock %}

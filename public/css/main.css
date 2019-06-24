@@ -1,0 +1,44 @@
+.geoSecu{
+    font-size: 10px;
+    text-align: right;
+}
+#article_snippet {
+    height: 150px;
+    min-width:1000px;
+
+
+}
+#article_description {
+    height: 150px;
+    min-width:1000px;
+
+}
+#article_tagsList {
+    height: 80px;
+    min-width:1000px;
+
+}
+h4 {
+    color: red;
+}
+.articlesList{
+     list-style: none;
+ }
+.articlesId{
+    font-size: 12px;
+}
+.ourTags{
+    background-color: #EEEFF1;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.footer {
+    min-height: 100px;
+
+    background-color: #f8f9fb;
+    border-top: 5px solid #EEEFF1;
+    margin-top: 50px;
+}
+.space{
+    height: 200px;
+}
